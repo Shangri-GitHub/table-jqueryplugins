@@ -24,8 +24,8 @@ This is a jQuery plugins!
             $(this).find('tr').bind('mouseout',function () {
                 $(this).removeClass(options.currentRow)
             })
-
-        })
+            return this;     
+        })
     }
 })(jQuery)
 ```
