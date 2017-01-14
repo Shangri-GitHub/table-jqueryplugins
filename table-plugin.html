@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="jquerytable_v0.1.js"></script>
+</head>
+<style>
+    table {
+        width: 100%;
+        border: 1px solid #000000;
+        border-collapse: collapse;
+    }
+
+    tr, td {
+        height: 28px;
+        border: 1px solid #f0f0f0;
+        text-align: center;
+    }
+    .oddRow {
+        background: honeydew;
+    }
+    .evenRow {
+        background: #ffffff;
+    }
+    .currentRow {
+        background: wheat;
+    }
+</style>
+<body>
+<table id="table">
+    <tr>
+        <td>姓名</td>
+        <td>身高</td>
+        <td>工作地址</td>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>180</td>
+        <td>西安</td>
+    </tr>
+    <tr>
+        <td>李四</td>
+        <td>190</td>
+        <td>南京</td>
+    </tr>
+    <tr>
+        <td>王五</td>
+        <td>160</td>
+        <td>北京</td>
+    </tr>
+    <tr>
+        <td>李四</td>
+        <td>190</td>
+        <td>南京</td>
+    </tr>
+    <tr>
+        <td>王五</td>
+        <td>160</td>
+        <td>北京</td>
+    </tr>
+</table>
+</body>
+<script>
+    $(function () {
+        $('#table').table({
+            oddRow:'oddRow',   //可设置奇数行的样式
+            evenRow:'evenRow',  //可设置偶数行的样式
+            currentRow:'currentRow', //可设置当前选中行的样式
+            mouseType:'mouseover',   //可设置鼠标时间(click);
+        })
+    })
+
+</script>
+</html>
