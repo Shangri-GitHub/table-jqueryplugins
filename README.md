@@ -1,6 +1,6 @@
 # table-jqueryplugins
 This is a jQuery plugins!
->js
+##js
 ``` javascript
 (function ($) {
     $.fn.table = function (options) {
