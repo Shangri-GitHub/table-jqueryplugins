@@ -9,8 +9,8 @@ This is a jQuery plugins!
             oddRow:'oddRow',   //奇数行的样式
             evenRow:'evenRow',  //偶数行的样式
             currentRow:'currentRow', //当前的样式
-            mouseType:'mouseover',
-        }
+            mouseType:'mouseover',   //当前鼠标触发的类型
+        }
         var options = $.extend(defaults, options);
 
         this.each(function () {
