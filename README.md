@@ -1,3 +1,13 @@
+## addtitle
+```javascript
+ $(".table-show-point").find("td").each(function (index, ele) {
+                    var tdText = $(ele).html();
+                    if (ele.scrollWidth - ele.offsetWidth > 0) {
+                        $(ele).attr("title", tdText);
+                        $(ele).css("cursor", "pointer");
+                    }
+                });
+```
 ## table-jqueryplugins
 This is a jQuery plugins!
 ##js
