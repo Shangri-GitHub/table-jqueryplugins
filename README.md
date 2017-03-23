@@ -1,5 +1,14 @@
 ## addtitle
+```css
+ .addtitle{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+```
 ```javascript
+
+
  $(".table-show-point").find("td").each(function (index, ele) {
                     var tdText = $(ele).html();
                     if (ele.scrollWidth - ele.offsetWidth > 0) {
@@ -194,4 +203,3 @@ function getNowFormatDate() {
 33. IP地址：\d+\.\d+\.\d+\.\d+ (提取IP地址时有用)
 
 34. IP地址：((?:(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d))
-
