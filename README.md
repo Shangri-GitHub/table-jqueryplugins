@@ -1,3 +1,31 @@
+## radio and checked
+``` html
+<style>
+        input[type='radio']{
+            display: none;
+        }
+        .radioValue{
+            margin-left: 8px;
+        }
+</style>
+<div>
+    <span>组织管理员</span>
+    <div style="display:inline-block">
+        <input type="radio" name="sex" id="radio-one" value="one"checked="">
+        <label for="radio-one" class="radio"><i class="fa fa-dot-circle-o"></i><span class="radioValue">是</span></label>
+    </div>
+    <div style="display:inline-block">
+        <input type="radio" name="sex" id="radio-two" value="two">
+        <label for="radio-two" class="radio"><i class="fa fa-circle-o"></i><span class="radioValue">否</span></label>
+    </div>
+</div>
+```
+``` javascript
+  $('label').click(function(){
+                $(this).parent().siblings('div').find('i').attr('class','fa fa-circle-o');
+                $(this).find('i').attr('class','fa fa-dot-circle-o');
+        })
+```
 ## addtitle
 ```css
  .addtitle{
