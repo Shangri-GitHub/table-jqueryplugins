@@ -8,6 +8,7 @@
             margin-left: 8px;
         }
 </style>
+<!-- radio -->
 <div>
     <span>组织管理员</span>
     <div style="display:inline-block">
@@ -19,12 +20,47 @@
         <label for="radio-two" class="radio"><i class="fa fa-circle-o"></i><span class="radioValue">否</span></label>
     </div>
 </div>
+<style>
+        input[type='checkbox']{
+            display: none;
+        }
+        .checkboxValue{
+            margin-left: 8px;
+        }
+        .fa-square-o{
+            margin-right: 2.3px;
+        }
+        .inline-block{
+            display: inline-block;
+        }
+</style>
+<!-- checkbox -->
+<div>
+    <span>组织管理员</span>
+    <div class="inline-block">
+        <input type="checkbox" name="sex" id="checkbox-one" value="one"checked="">
+        <label for="checkbox-one" class="checkbox"><i class="fa fa-check-square-o"></i><span class="checkboxValue">是</span></label>
+    </div>
+    <div class="inline-block">
+        <input type="checkbox" name="sex" id="checkbox-two" value="two">
+        <label for="checkbox-two" class="checkbox"><i class="fa fa-square-o"></i><span class="checkboxValue">否</span></label>
+    </div>
+</div>
 ```
 ``` javascript
+  //radio
   $('label').click(function(){
                 $(this).parent().siblings('div').find('i').attr('class','fa fa-circle-o');
                 $(this).find('i').attr('class','fa fa-dot-circle-o');
-        })
+  })
+  //checkbox      
+  $('label').click(function(){
+       if($(this).find('i').hasClass('fa-check-square-o')){
+             $(this).find('i').attr('class','fa fa-square-o');
+          }else{
+                $(this).find('i').attr('class','fa fa-check-square-o');
+          }
+   })
 ```
 ## addtitle
 ```css
